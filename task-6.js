@@ -1,12 +1,14 @@
 "use strict";
 
-// document.getElementById("validation-input").onblur = function() {
-//     if (this.getAttribute('data-length') < this.value.length) { 
-//         this.classList.remove('valid');
-//         this.classList.add('invalid');
-//     } else {
-//         this.classList.remove('invalid');
-//         this.classList.add('valid');
-//     }
-//     console.log(this.value.length);
-// };
+const valInput =   document.getElementById("validation-input")
+const myInput = document.querySelector('#validation-input').dataset.length
+
+valInput.addEventListener('blur', () => {
+  if (this.value.length == this.dataset.length) {
+    this.classList.remove('invalid');
+    this.classList.add('valid');
+  } else {
+    this.classList.remove('valid');
+    this.classList.add('invalid');
+  }
+})

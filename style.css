@@ -1,12 +1,11 @@
-body {
-    background-color: black;
-    color: wheat;
+  #validation-input {
+    border: 3px solid #bdbdbd;
   }
-  
-  .images-list{
-    width: 80%;
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+
+  #validation-input.invalid {
+    border-color: #f44336;
   }
